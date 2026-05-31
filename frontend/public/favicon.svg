@@ -1,0 +1,15 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bookFill" x1="124" y1="120" x2="388" y2="404" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F5F7FB"/>
+    </linearGradient>
+    <linearGradient id="boltFill" x1="196" y1="96" x2="320" y2="412" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD54A"/>
+      <stop offset="1" stop-color="#F5B400"/>
+    </linearGradient>
+  </defs>
+  <path d="M120 126C186 124 235 141 264 162V402C235 377 186 360 120 362V126Z" fill="url(#bookFill)" stroke="#D7DCE5" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M392 126C326 124 277 141 248 162V402C277 377 326 360 392 362V126Z" fill="url(#bookFill)" stroke="#D7DCE5" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M320 96L218 224H286L180 416L194 314H144L222 180L320 96Z" fill="url(#boltFill)" stroke="#F2B100" stroke-width="5" stroke-linejoin="round"/>
+</svg>

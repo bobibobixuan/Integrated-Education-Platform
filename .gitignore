@@ -1,0 +1,99 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+eggs/
+
+# Virtual environments
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+.TemporaryItems
+
+# SQLite
+*.db
+*.db-shm
+*.db-wal
+data/*
+
+# Build
+build/
+dist/game/
+*.spec.bak
+
+# Claude Code
+.claude/settings.local.json
+.claude/worktrees/
+
+# uv
+.uv-cache/
+.uv-python/
+.uv-backend-venv/
+.uv-backend-venv-repair
+.uv-backend-venv-repair2/
+
+# Temp
+.tmp-*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+serverlogs/
+gologs/
+
+# Coverage
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# backend
+backend/.venv/
+backend/__pycache__/
+backend/app/__pycache__/
+backend/*.egg-info/
+
+# frontend
+frontend/node_modules/
+frontend/dist/
+
+# CodeGraph
+.codegraph/
+
+# Agent memory / local automation
+AGENTS.md
+.agents/
+.reasonix/
+tools/codegraph/
+INTERNAL_CHANGELOG.md
+skills-lock.json
+archive/
+docs/code-review-*.md
+docs/security-review-*.md
+docs/superpowers/
+docs/*.xlsx
+导入说明/
+
+# data
+data/*.db
+data/*.db-*
+data/.migration.lock
+!data/.gitkeep
