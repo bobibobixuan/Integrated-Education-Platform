@@ -7,6 +7,18 @@ aliases: [公开更新日志, Release Notes]
 
 面向老师、部署者和公开读者。仅保留功能、体验、部署和通用安全加固信息，不记录敏感漏洞细节、内部调试入口或开发环境流水。
 
+## 2026-07-01
+
+### 2.3.2
+- 教师后台全面重构：由单文件 `AdminView.vue` 拆分为父路由骨架 + 五个独立业务页面（仪表盘、学生管理、题库管理、教学分析、PVP 管理）。
+- 新增六个后台业务 Pinia Store（`adminDashboard`、`adminStudents`、`adminQuestions`、`adminAnalytics`、`adminPvp`、`adminDashboardLayout`），接管各模块状态管理。
+- 教师后台 UI 全面升级为 Element Plus 组件体系，统一后台视觉风格与低噪音配色。
+- 仪表盘支持自定义工作台：模块显隐、排序、半宽/全宽切换，偏好通过 `localStorage` 保留。
+- PVP 管理控制台补充房间总览、状态驱动操作、选中高亮、分区详情抽屉和对战进度摘要。
+- 教师后台布局修正为整屏应用布局，侧栏和顶部栏固定不随内容滚动。
+- 接入 Element Plus、Element Plus Icons、ECharts 和 vue-echarts 前端依赖。
+- 更新架构文档与部署说明，反映教师后台重构后的路由和结构变化。
+
 ## 2026-06-05
 
 ### 2.3.1
@@ -778,4 +790,4 @@ aliases: [公开更新日志, Release Notes]
 
 ---
 
-> 📍 [[docs/HOME|文档地图]] · [[INTERNAL_CHANGELOG|内部日志]] · [[更新日志/README|版本日志索引]]
+> 📍 [[README|项目概览]] · [[docs/ARCHITECTURE|架构说明]] · [[docs/API|API 文档]]

@@ -107,7 +107,7 @@ const latestPoint = computed(() => props.points[props.points.length - 1] ?? null
   display: flex;
   justify-content: space-between;
   gap: 12px;
-  color: #64748b;
+  color: var(--admin-muted, #64748b);
   font-size: 12px;
 }
 
@@ -118,7 +118,7 @@ const latestPoint = computed(() => props.points[props.points.length - 1] ?? null
   justify-content: center;
   border-radius: 14px;
   border: 1px dashed #cbd5e1;
-  color: #64748b;
-  background: #f8fafc;
+  color: var(--admin-muted, #64748b);
+  background: var(--admin-surface-soft, #f8fafc);
 }
 </style>

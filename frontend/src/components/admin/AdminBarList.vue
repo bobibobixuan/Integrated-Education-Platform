@@ -61,14 +61,14 @@ function barWidth(value: number) {
 }
 
 .bar-list__head strong {
-  color: #0f172a;
+  color: var(--admin-text, #0f172a);
   font-size: 13px;
   font-weight: 700;
 }
 
 .bar-list__head span,
 .bar-list__hint {
-  color: #64748b;
+  color: var(--admin-muted, #64748b);
   font-size: 12px;
 }
 
@@ -76,7 +76,7 @@ function barWidth(value: number) {
   overflow: hidden;
   height: 10px;
   border-radius: 999px;
-  background: #e2e8f0;
+  background: #e8eef7;
 }
 
 .bar-list__fill {
@@ -85,19 +85,19 @@ function barWidth(value: number) {
 }
 
 .bar-list__fill.is-blue {
-  background: linear-gradient(90deg, #1e40af, #3b82f6);
+  background: #2563eb;
 }
 
 .bar-list__fill.is-amber {
-  background: linear-gradient(90deg, #d97706, #f59e0b);
+  background: #f59e0b;
 }
 
 .bar-list__fill.is-red {
-  background: linear-gradient(90deg, #dc2626, #f97316);
+  background: #ef4444;
 }
 
 .bar-list__fill.is-green {
-  background: linear-gradient(90deg, #15803d, #22c55e);
+  background: #16a34a;
 }
 
 .bar-list__empty {
@@ -107,7 +107,7 @@ function barWidth(value: number) {
   justify-content: center;
   border-radius: 14px;
   border: 1px dashed #cbd5e1;
-  color: #64748b;
-  background: #f8fafc;
+  color: var(--admin-muted, #64748b);
+  background: var(--admin-surface-soft, #f8fafc);
 }
 </style>

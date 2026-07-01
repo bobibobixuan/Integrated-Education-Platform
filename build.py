@@ -41,7 +41,7 @@ def build_game():
 
     # Resolve CSS files referenced in index.html
     index_css = find_asset('index-')
-    for marker in ['LoginView-', 'GameView-', 'AdminView-', 'LeaderboardView-',
+    for marker in ['LoginView-', 'GameView-', 'LeaderboardView-',
                    'AchievementsView-', 'PvPLobbyView-', 'PvPBattleView-']:
         try:
             css_path = find_asset(marker)

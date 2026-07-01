@@ -38,8 +38,9 @@ describe('HomeView', () => {
       },
     })
 
-    expect(wrapper.text()).toContain('学生导航首页')
+    expect(wrapper.text()).toContain('知识学习对战平台')
+    expect(wrapper.text()).toContain('账号状态')
     expect(wrapper.text()).toContain('开始冒险')
-    expect(wrapper.text()).toContain('登录 / 注册')
+    expect(wrapper.text()).toContain('去登录')
   })
 })

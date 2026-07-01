@@ -80,6 +80,7 @@ frontend/dist/
 
 # Agent memory / local automation
 AGENTS.md
+.ai/
 .agents/
 .reasonix/
 tools/codegraph/
@@ -97,3 +98,7 @@ data/*.db
 data/*.db-*
 data/.migration.lock
 !data/.gitkeep
+
+# Local scratch files
+_old_homeview.tmp
+nul;

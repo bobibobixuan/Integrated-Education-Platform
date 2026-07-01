@@ -24,7 +24,38 @@ const router = createRouter({
     { path: '/pvp/result', name: 'pvp-result', component: () => import('@/views/PvPResultView.vue'), meta: { title: '对战结算', requiresAuth: true, backTo: '/pvp' } },
     { path: '/leaderboard', name: 'leaderboard', component: () => import('@/views/LeaderboardView.vue'), meta: { title: '排行榜', backTo: '/' } },
     { path: '/achievements', name: 'achievements', component: () => import('@/views/AchievementsView.vue'), meta: { title: '成就墙', requiresAuth: true, backTo: '/' } },
-    { path: '/admin', name: 'admin', component: () => import('@/views/AdminView.vue') },
+    {
+      path: '/admin',
+      component: () => import('@/views/admin/AdminShell.vue'),
+      redirect: '/admin/dashboard',
+      children: [
+        {
+          path: 'dashboard',
+          name: 'admin-dashboard',
+          component: () => import('@/views/admin/AdminDashboardPage.vue'),
+        },
+        {
+          path: 'students',
+          name: 'admin-students',
+          component: () => import('@/views/admin/AdminStudentsPage.vue'),
+        },
+        {
+          path: 'questions',
+          name: 'admin-questions',
+          component: () => import('@/views/admin/AdminQuestionsPage.vue'),
+        },
+        {
+          path: 'analytics',
+          name: 'admin-analytics',
+          component: () => import('@/views/admin/AdminAnalyticsPage.vue'),
+        },
+        {
+          path: 'pvp',
+          name: 'admin-pvp',
+          component: () => import('@/views/admin/AdminPvpPage.vue'),
+        },
+      ],
+    },
   ]
 })
 
