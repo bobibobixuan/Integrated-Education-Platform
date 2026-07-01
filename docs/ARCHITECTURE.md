@@ -1,3 +1,8 @@
+---
+tags: [architecture, technical, 架构]
+aliases: [架构说明, 技术架构, Architecture]
+---
+
 # 综合教育平台架构说明
 
 > 文档版本：v2.2.22  
@@ -215,11 +220,16 @@ frontend/src/
 ### 7.3 教师端路由
 
 - `/admin`
+- `/admin/dashboard`
+- `/admin/students`
+- `/admin/questions`
+- `/admin/analytics`
+- `/admin/pvp`
 
 注意：
 
-- 当前教师端仍是 `AdminView.vue` 内部 tab 结构
-- 不是独立的 `/admin/*` 子路由体系
+- `/admin` 会重定向到 `/admin/dashboard`
+- 教师端已拆分为后台父路由 + 独立子页面
 
 ---
 
@@ -263,18 +273,16 @@ frontend/src/
 
 ### 8.3 教师端当前结构
 
-教师端当前不是“store + 多路由”体系，而是：
+教师端当前是“后台父路由 + 业务 Store + 独立页面”体系：
 
-- 路由入口：`/admin`
-- 页面文件：`frontend/src/views/AdminView.vue`
-- 内部通过 `activeTab` 切换多个后台模块
-- 自己维护 `admin_token` / `admin_user`
-- 自己维护 admin WebSocket
+- 父路由：`frontend/src/views/admin/AdminShell.vue`
+- 仪表盘：`frontend/src/views/admin/AdminDashboardPage.vue` + `frontend/src/stores/adminDashboard.ts`
+- 学生管理：`frontend/src/views/admin/AdminStudentsPage.vue` + `frontend/src/stores/adminStudents.ts`
+- 题库管理与导入中心：`frontend/src/views/admin/AdminQuestionsPage.vue` + `frontend/src/stores/adminQuestions.ts`
+- 教学分析与错题统计：`frontend/src/views/admin/AdminAnalyticsPage.vue` + `frontend/src/stores/adminAnalytics.ts`
+- PVP 管理：`frontend/src/views/admin/AdminPvpPage.vue` + `frontend/src/stores/adminPvp.ts`
 
-这意味着：
-
-- 教师端改动要特别谨慎
-- 不要在没有明确计划的情况下把它大拆重构
+管理员登录态仍使用独立的 `admin_token` / `admin_user`，不和学生端 token 混用。
 
 ---
 
@@ -414,16 +422,17 @@ frontend/src/
 
 涉及文件：
 
-- `frontend/src/views/AdminView.vue`
+- `frontend/src/views/admin/AdminPvpPage.vue`
+- `frontend/src/stores/adminPvp.ts`
 - `frontend/src/api/admin.ts`
 - `backend/app/routers/pvp.py`
 - `backend/app/services/pvp_service.py`
 
 规则：
 
-- 管理端 PVP 当前是后台 tab
-- 使用独立 admin WebSocket
-- 不要假设存在 `stores/adminPvp.ts`
+- 管理端 PVP 是 `/admin/pvp` 独立后台页面
+- 使用独立 admin WebSocket 同步房间快照
+- PVP 房间列表、表单、开始和结束操作由 `stores/adminPvp.ts` 管理
 
 ### 12.3 记录与判题
 
@@ -503,7 +512,13 @@ AI 应当：
 
 这些方向可以做，但都还不是当前事实：
 
-1. 拆分 `AdminView.vue`
-2. 教师端下沉到独立 store
+1. 继续细化教师后台公共组件
+2. 为教师后台业务 Store 补充单元测试
 3. 细化 WebSocket 消息模块
 4. 把更多边界写进自动化测试
+
+---
+
+## 关联文档
+
+- [[docs/HOME|文档地图]] · [[docs/PRD|PRD]] · [[docs/API|API]] · [[docs/DATABASE|数据库]] · [[docs/UI_SPEC|UI规范]] · [[docs/AGENTS|协作说明]]

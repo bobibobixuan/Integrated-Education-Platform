@@ -1,3 +1,8 @@
+---
+tags: [ui, design, visual, 界面]
+aliases: [UI规范, 界面规范, UI Specification]
+---
+
 # 综合教育平台 UI 规范
 
 > 文档版本：v2.2.23  
@@ -304,3 +309,9 @@ AI 修改 UI 时必须：
 - 不破坏已有业务流程
 - 先读 `docs/UI_SPEC.md`
 - 如果页面依赖全局视觉系统，要一起检查 `style.css`
+
+---
+
+## 关联文档
+
+- [[docs/HOME|文档地图]] · [[docs/PRD|PRD]] · [[docs/ARCHITECTURE|架构]] · [[docs/API|API]] · [[docs/DATABASE|数据库]] · [[docs/AGENTS|协作说明]]

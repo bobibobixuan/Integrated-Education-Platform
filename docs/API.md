@@ -1,3 +1,8 @@
+---
+tags: [api, websocket, interface, 接口]
+aliases: [API文档, 接口说明, API Reference]
+---
+
 # 综合教育平台 API 说明
 
 > 文档版本：v2.2.23  
@@ -609,3 +614,9 @@
 - 不要改出与前端类型不兼容的结构
 - 改 schema 时同步更新前端 `types/api.ts`
 - 改鉴权或错误约定时同步更新 `docs/API.md`
+
+---
+
+## 关联文档
+
+- [[docs/HOME|文档地图]] · [[docs/PRD|PRD]] · [[docs/ARCHITECTURE|架构]] · [[docs/DATABASE|数据库]] · [[docs/UI_SPEC|UI规范]] · [[docs/AGENTS|协作说明]]

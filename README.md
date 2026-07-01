@@ -1,3 +1,8 @@
+---
+tags: [readme, overview, 概览]
+aliases: [项目概览, Overview]
+---
+
 # Integrated Education Platform
 
 An all-in-one classroom-friendly Python learning platform for LAN classrooms, school labs, and small teaching groups.
@@ -105,6 +110,7 @@ docs/
   API.md
   DATABASE.md
   UI_SPEC.md
+  AGENTS.md
 ```
 
 ---
@@ -205,6 +211,10 @@ Use these documents as the source of truth:
    Tables, relationships, migration constraints
 5. [docs/UI_SPEC.md](docs/UI_SPEC.md)
    Student/admin UI rules, layout, visual system, responsive limits
+6. [docs/AGENTS.md](docs/AGENTS.md)
+   Public collaboration notes for future maintainers or AI agents
+
+For public contributors, use [docs/AGENTS.md](docs/AGENTS.md) as the collaboration entrypoint.
 
 ---
 
@@ -218,6 +228,28 @@ Use these documents as the source of truth:
 
 ---
 
+## Public Repository Notes
+
+Usually kept in the public repository:
+
+- source code
+- public documentation
+- public changelog
+
+Usually kept local-only:
+
+- internal changelog
+- agent memory and local AI collaboration notes
+- review notes and temporary drafts
+- database files
+- build outputs
+
+---
+
 ## License
 
 See [LICENSE](LICENSE).
+
+---
+
+> 📍 [[docs/HOME|文档地图]] · [[README.zh-CN|中文说明]]

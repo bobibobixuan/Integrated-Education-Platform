@@ -1,3 +1,8 @@
+---
+tags: [readme, overview, 概览, 中文]
+aliases: [项目概览中文, 中文说明]
+---
+
 # 综合教育平台
 
 一套面向局域网课堂、校内机房和小型教学场景的一体化 Python 学习平台。
@@ -105,6 +110,7 @@ docs/
   API.md
   DATABASE.md
   UI_SPEC.md
+  AGENTS.md
 ```
 
 ---
@@ -205,6 +211,10 @@ uv run python -m app migrate --upgrade
    数据表、关系、迁移约束
 5. [docs/UI_SPEC.md](docs/UI_SPEC.md)
    学生端/教师端 UI 规范、视觉系统和响应式边界
+6. [docs/AGENTS.md](docs/AGENTS.md)
+   面向后续维护者和 AI Agent 的公开协作说明
+
+公开协作者请以 [docs/AGENTS.md](docs/AGENTS.md) 作为协作入口。
 
 ---
 
@@ -218,6 +228,28 @@ uv run python -m app migrate --upgrade
 
 ---
 
+## 公开仓库说明
+
+通常适合保留在公开仓库里的内容：
+
+- 源码
+- 公开文档
+- 公开变更日志
+
+通常只建议本地保留的内容：
+
+- 内部变更日志
+- agent 记忆和本地 AI 协作文档
+- 审查记录和临时草稿
+- 数据库文件
+- 构建产物
+
+---
+
 ## 许可证
 
 详见 [LICENSE](LICENSE)。
+
+---
+
+> 📍 [[docs/HOME|文档地图]] · [[README|English Overview]]

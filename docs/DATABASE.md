@@ -1,3 +1,8 @@
+---
+tags: [database, sql, schema, 数据库]
+aliases: [数据库说明, Database Schema]
+---
+
 # 综合教育平台数据库说明
 
 > 文档版本：v2.2.22  
@@ -473,3 +478,9 @@ AI 如果涉及数据库变更，必须：
 - 前端类型
 - 测试
 - 文档
+
+---
+
+## 关联文档
+
+- [[docs/HOME|文档地图]] · [[docs/PRD|PRD]] · [[docs/ARCHITECTURE|架构]] · [[docs/API|API]] · [[docs/UI_SPEC|UI规范]] · [[docs/AGENTS|协作说明]]

@@ -1,3 +1,8 @@
+---
+tags: [product, requirements, 产品]
+aliases: [产品需求文档, PRD]
+---
+
 # 综合教育平台 PRD
 
 > 文档版本：v2.2.22  
@@ -409,13 +414,13 @@ AI 在本项目里必须遵守：
 
 推荐阅读顺序：
 
-1. `README.md`
-2. `docs/PRD.md`
-3. `docs/ARCHITECTURE.md`
-4. `docs/API.md`
-5. `docs/DATABASE.md`
-6. `docs/UI_SPEC.md`
-7. `docs/AGENTS.md`
+1. [[README]]
+2. [[docs/PRD]]
+3. [[docs/ARCHITECTURE]]
+4. [[docs/API]]
+5. [[docs/DATABASE]]
+6. [[docs/UI_SPEC]]
+7. [[docs/AGENTS]]
 
 ---
 
@@ -433,5 +438,5 @@ AI 在本项目里必须遵守：
 
 - 打磨手机端高频页面体验
 - 继续降低 PVP 状态恢复与刷新风险
-- 降低 `AdminView.vue` 单文件复杂度
+- 持续打磨教师后台多页面与业务 Store 的维护体验
 - 完善对外文档和 AI 协作文档，降低接手成本
