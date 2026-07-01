@@ -521,4 +521,4 @@ AI 应当：
 
 ## 关联文档
 
-- [[docs/HOME|文档地图]] · [[docs/PRD|PRD]] · [[docs/API|API]] · [[docs/DATABASE|数据库]] · [[docs/UI_SPEC|UI规范]] · [[docs/AGENTS|协作说明]]
+- [[README|项目概览]] · [[docs/PRD|PRD]] · [[docs/API|API]] · [[docs/DATABASE|数据库]] · [[docs/UI_SPEC|UI规范]]

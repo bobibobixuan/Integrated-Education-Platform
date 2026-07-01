@@ -110,7 +110,6 @@ docs/
   API.md
   DATABASE.md
   UI_SPEC.md
-  AGENTS.md
 ```
 
 ---
@@ -211,10 +210,7 @@ Use these documents as the source of truth:
    Tables, relationships, migration constraints
 5. [docs/UI_SPEC.md](docs/UI_SPEC.md)
    Student/admin UI rules, layout, visual system, responsive limits
-6. [docs/AGENTS.md](docs/AGENTS.md)
-   Public collaboration notes for future maintainers or AI agents
 
-For public contributors, use [docs/AGENTS.md](docs/AGENTS.md) as the collaboration entrypoint.
 
 ---
 
@@ -252,4 +248,4 @@ See [LICENSE](LICENSE).
 
 ---
 
-> 📍 [[docs/HOME|文档地图]] · [[README.zh-CN|中文说明]]
+> 📍 [[README|项目概览]] · [[README.zh-CN|中文说明]]

@@ -420,7 +420,6 @@ AI 在本项目里必须遵守：
 4. [[docs/API]]
 5. [[docs/DATABASE]]
 6. [[docs/UI_SPEC]]
-7. [[docs/AGENTS]]
 
 ---
 

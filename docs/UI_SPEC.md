@@ -314,4 +314,4 @@ AI 修改 UI 时必须：
 
 ## 关联文档
 
-- [[docs/HOME|文档地图]] · [[docs/PRD|PRD]] · [[docs/ARCHITECTURE|架构]] · [[docs/API|API]] · [[docs/DATABASE|数据库]] · [[docs/AGENTS|协作说明]]
+- [[README|项目概览]] · [[docs/PRD|PRD]] · [[docs/ARCHITECTURE|架构]] · [[docs/API|API]] · [[docs/DATABASE|数据库]]

@@ -110,7 +110,6 @@ docs/
   API.md
   DATABASE.md
   UI_SPEC.md
-  AGENTS.md
 ```
 
 ---
@@ -211,10 +210,7 @@ uv run python -m app migrate --upgrade
    数据表、关系、迁移约束
 5. [docs/UI_SPEC.md](docs/UI_SPEC.md)
    学生端/教师端 UI 规范、视觉系统和响应式边界
-6. [docs/AGENTS.md](docs/AGENTS.md)
-   面向后续维护者和 AI Agent 的公开协作说明
 
-公开协作者请以 [docs/AGENTS.md](docs/AGENTS.md) 作为协作入口。
 
 ---
 
@@ -252,4 +248,4 @@ uv run python -m app migrate --upgrade
 
 ---
 
-> 📍 [[docs/HOME|文档地图]] · [[README|English Overview]]
+> 📍 [[README|English Overview]]

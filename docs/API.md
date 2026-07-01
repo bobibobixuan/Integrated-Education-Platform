@@ -619,4 +619,4 @@ aliases: [API文档, 接口说明, API Reference]
 
 ## 关联文档
 
-- [[docs/HOME|文档地图]] · [[docs/PRD|PRD]] · [[docs/ARCHITECTURE|架构]] · [[docs/DATABASE|数据库]] · [[docs/UI_SPEC|UI规范]] · [[docs/AGENTS|协作说明]]
+- [[README|项目概览]] · [[docs/PRD|PRD]] · [[docs/ARCHITECTURE|架构]] · [[docs/DATABASE|数据库]] · [[docs/UI_SPEC|UI规范]]
